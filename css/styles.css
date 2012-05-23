@@ -1,0 +1,335 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+/* @group Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1;
+  background: url(../images/paper1.png);
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+/* @end */
+
+
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #502D16
+}
+
+p {
+  font-size: 1.3em;
+}
+
+
+header {
+  width: 920px;
+  margin: auto;
+  position: relative;
+  height: 530px;
+  background: url(../images/top_shelf.png) no-repeat bottom;
+}
+
+header img {
+  position: absolute;
+  z-index: 1;
+}
+
+header #tagline {
+  font-family: "Lobster" sans-serif;
+  font-size: 35pt;
+  color: black;
+  text-shadow: 1px 1px 0px white;
+  position: absolute;
+  left: 340px;
+  top: 110px;
+}
+
+header #station {
+  font-family: "Bree Serif" serif;
+  font-size: 80pt;
+  color: #550000;
+  text-shadow: 1px 1px 0px white;
+  position: absolute;
+  left: 220px;
+  top: 10px;
+}
+
+header #frequency {
+  position: absolute;
+  top: 30px;
+  left: 520px;
+}
+
+header #radio {
+  bottom: 0px;
+  left: 70px;
+  z-index: 2;
+}
+
+header #paper {
+  position: absolute;
+  left: 190px;
+  top: -25px;
+  background: url(../images/ripped-paper.png);
+  width: 476px;
+  height: 300px;
+}
+
+#corkboard {
+  position: absolute;
+  width: 100%;
+  height: 470px;
+  background: url(../images/corkboard.jpg);
+  z-index: 0;
+}
+
+#corkboard div {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: url(../images/wood10.jpg);
+  box-shadow: 0px 0px 3px black;
+  border-top: 1px solid white;
+  height: 35px;
+}
+
+nav {
+  width: 920px;
+  margin: auto;
+  /*background: url(../images/wood_texture.png) #502D16;*/
+  background: url(../images/wood_texture_dark.png);
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  box-shadow: inset 0px 0px 5px black;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+nav ul li a {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 10px 10px;
+  font-family: "Lobster";
+
+  /*background-color: #502D16;*/
+  background-color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+}
+
+nav ul li a:hover {
+}
+
+#container {
+  background: url(../images/wood_texture.png);
+  padding: 20px;
+  width: 880px;
+  margin: auto;
+  min-height: 500px;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+}
+
+#content {
+  background: white;
+  padding: 25px 15px;
+  box-shadow: 0px 0px 3px black;
+}
+
+#content .post {
+  margin-bottom: 50px;
+  position: relative;
+  text-align: justify;
+}
+
+#content .post p {
+  padding: 7px 0;
+}
+
+.byline {
+  text-transform: uppercase;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 10pt;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.post-image {
+  position: relative;
+  float: right;
+  padding: 1px;
+  background: white;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  margin: 0px 0px 5px 20px;
+}
+
+#content h1 {
+  font-size: 25px;
+}
+
+#content p {
+  font-size: 13pt;
+  line-height: 23px;
+}
+
+#content .left {
+  width: 70%;
+}
+
+.polaroid {
+  width: 200px;
+  padding: 10px 10px 40px 10px;
+  background: white url(../images/paper.png);
+  position: absolute;
+  height: 130px;
+  box-shadow: 0px 0px 5px gray;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.polaroid:before {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 2;
+}
+
+.polaroid.red1:before {
+  background: url(../images/pins/red1.png) no-repeat;
+  left: 80px;
+  top: -30px;
+  width: 40px;
+  height: 60px;
+}
+
+.polaroid.red2:before {
+  background: url(../images/pins/red2.png) no-repeat;
+  left: 80px;
+  top: -15px;
+  width: 40px;
+  height: 60px;
+}
+
+.polaroid.blue1:before {
+  background: url(../images/pins/blue1.png) no-repeat;
+  left: 80px;
+  top: -15px;
+  width: 40px;
+  height: 60px;
+}
+
+.polaroid.blue2:before {
+  background: url(../images/pins/blue2.png) no-repeat;
+  left: 80px;
+  top: -25px;
+  width: 40px;
+  height: 60px;
+}
+
+.polaroid.green1:before {
+  background: url(../images/pins/green1.png) no-repeat;
+  left: 80px;
+  top: -15px;
+  width: 40px;
+  height: 60px;
+}
+
+.polaroid.yellow1:before {
+  background: url(../images/pins/yellow1.png) no-repeat;
+  left: 80px;
+  top: -15px;
+  width: 40px;
+  height: 60px;
+}
+
+.polaroid img {
+  width: 200px;
+  border: 1px solid gray;
+}
+
+.postit {
+  width: 286px;
+  height: 292px;
+  position: absolute;
+}
+
+.postit.yellow1 {
+  background: url(../images/postits/postit-yellow-1.png) no-repeat;
+}
+
+.inset {
+  background-color: #502D16;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+}

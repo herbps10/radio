@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  background: url(../images/paper1.png);
+  background-color: #140a03;
 }
 
 ol, ul {
@@ -79,6 +79,9 @@ header {
   position: relative;
   height: 530px;
   background: url(../images/top_shelf.png) no-repeat bottom;
+  -moz-box-shadow: 0 2px 0 rgba(242, 212, 169, 0.27);
+  -webkit-box-shadow: 0 2px 0 rgba(242, 212, 169, 0.27);
+  box-shadow: 0 2px 0 rgba(242, 212, 169, 0.27);
 }
 
 header img {
@@ -113,18 +116,18 @@ header #frequency {
 }
 
 header #radio {
-  bottom: 0px;
-  left: 70px;
+  bottom: 20px;
+  left: 120px;
   z-index: 2;
 }
 
 header #paper {
   position: absolute;
-  left: 190px;
-  top: -25px;
-  background: url(../images/ripped-paper.png);
-  width: 476px;
-  height: 300px;
+  left: 170px;
+  top: -12px;
+  background: url(../images/ripped-paper.png) no-repeat;
+  width: 500px;
+  height: 320px;
 }
 
 #corkboard {
@@ -133,6 +136,10 @@ header #paper {
   height: 470px;
   background: url(../images/corkboard.jpg);
   z-index: 0;
+  border-bottom: 24px solid #eadbd0;
+  -moz-box-shadow: inset 0 -4px 8px #481f07;
+  -webkit-box-shadow: inset 0 -4px 8px #481f07;
+  box-shadow: inset 0 -4px 8px #481f07;
 }
 
 #corkboard div {
@@ -146,13 +153,8 @@ header #paper {
 }
 
 nav {
-  width: 920px;
   margin: auto;
-  /*background: url(../images/wood_texture.png) #502D16;*/
-  background: url(../images/wood_texture_dark.png);
-  border-left: 2px solid #ccc;
-  border-right: 2px solid #ccc;
-  box-shadow: inset 0px 0px 5px black;
+  padding-bottom: 10px;
 }
 
 nav ul {
@@ -163,7 +165,6 @@ nav ul li {
   display: inline-block;
   margin: 10px 10px 10px 10px;
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
@@ -171,7 +172,7 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   font-size: 1.5em;
-  padding: 10px 10px;
+  padding: 10px 20px;
   font-family: "Lobster";
 
   /*background-color: #502D16;*/
@@ -187,13 +188,11 @@ nav ul li a:hover {
 }
 
 #container {
-  background: url(../images/wood_texture.png);
+  background: url(../images/wood_texture_dark.png);
   padding: 20px;
   width: 880px;
   margin: auto;
   min-height: 500px;
-  border-right: 2px solid #ccc;
-  border-left: 2px solid #ccc;
 }
 
 #content {
@@ -246,10 +245,10 @@ nav ul li a:hover {
 
 .polaroid {
   width: 200px;
-  padding: 10px 10px 40px 10px;
-  background: white url(../images/paper.png);
+  padding: 14px 14px 50px 14px;
+  background: whitesmoke;
   position: absolute;
-  height: 130px;
+  height: 200px;
   box-shadow: 0px 0px 5px gray;
   border-radius: 3px;
   z-index: 1;

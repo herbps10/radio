@@ -241,7 +241,12 @@ nav ul li a:hover {
 }
 
 #content .left {
-  width: 70%;
+  width: 60%;
+}
+
+#content .right {
+  width: 30%;
+  float: right;
 }
 
 .polaroid {
@@ -332,4 +337,43 @@ nav ul li a:hover {
   -moz-background-clip: text;
   color: transparent;
   text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+}
+
+#twitter {
+  position: relative;
+  margin-top: 35px;
+}
+
+#twitter img {
+  position: absolute;
+  right: 0px;
+}
+
+
+#tweets {
+  list-style-type: none;
+  margin: 15px 0;
+  padding: 0;
+}
+
+#tweets li {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0px #ccc;
+  border: 1px solid #ccc;
+  
+  background: rgb(247,251,252); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(247,251,252,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,251,252,1)), color-stop(100%,rgba(238,238,238,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(247,251,252,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(247,251,252,1) 0%,rgba(238,238,238,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(247,251,252,1) 0%,rgba(238,238,238,1) 100%); /* IE10+ */
+  background: linear-gradient(top, rgba(247,251,252,1) 0%,rgba(238,238,238,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+
+#tweets li div.date {
+  font-size: 10pt;
+  color: gray;
 }

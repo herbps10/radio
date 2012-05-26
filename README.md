@@ -13,12 +13,15 @@ Once you have those installed, grab Jekyll with
 `gem install jekyll`
 
 To regenerate the site, run the following in the main folder:
+
 `jekyll`
 
 Alternatively, if you're going to be doing a lot of development work on the site, launch the Jekyll server with
+
 `jekyll --auto --server`
 
 Every time you make a change, the site will be automatically regenerated.
 
 The site is then accessible at
+
 `localhost:4000`

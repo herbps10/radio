@@ -65,9 +65,10 @@ h1 {
   font-weight: bold;
   font-size: 30px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #502D16;
   text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px;
+  color: #4f2f40;
   text-align: left;
+  font: bold 30px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -219,16 +220,18 @@ nav ul li {
 
 nav ul li a {
   display: inline-block;
-  font-size: 1.5em;
   padding: 10px 20px;
   font-family: "Lobster";
 
   /*background-color: #502D16;*/
-  color: black;
   text-shadow: rgba(255, 255, 255, 1) 0px 1px 1px;
+  color: #3d3d3d;
+  text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+  font: 1.5em "Lobster";
 }
 
-nav ul li a:hover {
+nav ul li:hover {
+  background-color: #ffffff;
 }
 
 #container {
@@ -389,10 +392,6 @@ nav ul li a:hover {
 
 .postit.yellow1 {
   background: url(/images/postits/postit-yellow-1.png) no-repeat;
-}
-
-.inset {
-  
 }
 
 .listenlive {

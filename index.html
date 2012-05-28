@@ -30,6 +30,11 @@ home: true
 
           {{ post.content | format_content }}
         </article>
+      {% else if post.layout == 'photoblog' %}
+        <article class='photoblog'>
+          <div class='byline'>{{ post.date | date: "%d %B %Y" }}</div><br/>
+          <img src='/img/{{ post.image }}' alt='Photoblog Image' />
+        </article>
       {% endif %}
     {% endfor %}
   </div>

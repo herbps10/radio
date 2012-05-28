@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$(".polaroid").each(function() {
 		$(this).css('-webkit-transform', 'rotate(' + $(this).attr('rel') + 'deg)');
+		$(this).css('-moz-transform', 'rotate(' + $(this).attr('rel') + 'deg)');
+		$(this).css('-opera-transform', 'rotate(' + $(this).attr('rel') + 'deg)');
 	});
 
 	enableTwitter = true;

@@ -65,12 +65,8 @@ h1 {
   font-weight: bold;
   font-size: 30px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #502D16;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+  color: #502D16;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px;
   text-align: left;
 }
 
@@ -228,12 +224,8 @@ nav ul li a {
   font-family: "Lobster";
 
   /*background-color: #502D16;*/
-  background-color: black;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+  color: black;
+  text-shadow: rgba(255, 255, 255, 1) 0px 1px 1px;
 }
 
 nav ul li a:hover {
@@ -257,6 +249,12 @@ nav ul li a:hover {
   margin-bottom: 50px;
   position: relative;
   text-align: justify;
+}
+
+#content article.photoblog img {
+  padding: 1px;
+  box-shadow: 0px 0px 3px black;
+  margin-bottom: 50px;
 }
 
 #content article p {

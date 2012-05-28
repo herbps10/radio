@@ -103,6 +103,19 @@ header {
   box-shadow: 0 2px 0 rgba(242, 212, 169, 0.27);
 }
 
+.page header {
+  height: 235px;
+}
+
+.page #corkboard {
+  z-index: 0;
+}
+
+.page #container {
+  position: relative;
+  z-index: 10;
+}
+
 header img {
   position: absolute;
   z-index: 1;

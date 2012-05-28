@@ -3,7 +3,7 @@ WGSU Radio Website
 
 This site is based on the Jekyll static site generator. 
 
-Jekyll renders the site into flat HTML that is served from the Geneseo servers. 
+Jekyll renders the site into flat HTML that can be served straight from the Geneseo servers without any need for PHP or other such fancy technologies. Thus, the site is secure, while not sacrificing easy updates. 
 
 Install Jekyll
 =============

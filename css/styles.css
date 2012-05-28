@@ -1,6 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
-
 /* @group Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -37,7 +34,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background: url(../images/paper1.png);
+  /*background: url(/images/paper1.png);*/
+  background: url(/images/seamlesspaper3.jpg);
   /*background-color: #140a03;*/
 }
 
@@ -65,15 +63,35 @@ a{
 
 h1 {
   font-weight: bold;
-  font-size: 3em;
+  font-size: 30px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #502D16
+  background-color: #502D16;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 30px 0px 10px 0;
 }
 
 p {
   font-size: 1.3em;
 }
 
+
+#listen {
+  position: absolute;
+  top: -7px;
+  right: 20px;
+  z-index: 30;
+}
 
 header {
   width: 920px;
@@ -139,13 +157,14 @@ header #radio .shadow {
   top: 215px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
+  -moz-border-radius: 30px;
 }
 
 header #paper {
   position: absolute;
   left: 170px;
   top: -12px;
-  background: url(../images/ripped-paper.png) no-repeat;
+  background: url(/images/ripped-paper.png) no-repeat;
   width: 500px;
   height: 320px;
 }
@@ -154,7 +173,7 @@ header #paper {
   position: absolute;
   width: 100%;
   height: 470px;
-  background: url(../images/corkboard.jpg);
+  background: url(/images/corkboard.jpg);
   z-index: 0;
   border-bottom: 24px solid #eadbd0;
   -moz-box-shadow: inset 0 -4px 8px #481f07;
@@ -166,7 +185,7 @@ header #paper {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  background: url(../images/wood10.jpg);
+  background: url(/images/wood10.jpg);
   box-shadow: 0px 0px 3px black;
   border-top: 1px solid white;
   height: 35px;
@@ -208,7 +227,7 @@ nav ul li a:hover {
 }
 
 #container {
-  background: url(../images/wood_texture_dark.png);
+  background: url(/images/wood_texture_dark.png);
   padding: 20px;
   width: 880px;
   margin: auto;
@@ -230,6 +249,14 @@ nav ul li a:hover {
 #content article p {
   padding: 7px 0;
   font-family: "Georgia", serif;
+}
+
+#content article p a {
+  color: blue;
+}
+
+#content article p a:hover {
+  text-decoration: underline;
 }
 
 .byline {
@@ -256,10 +283,6 @@ nav ul li a:hover {
   margin: 10px 10px 10px;
   padding: 1px;
   background: white;
-}
-
-#content h1 {
-  font-size: 25px;
 }
 
 #content p {
@@ -295,7 +318,7 @@ nav ul li a:hover {
 }
 
 .polaroid.red1:before {
-  background: url(../images/pins/red1.png) no-repeat;
+  background: url(/images/pins/red1.png) no-repeat;
   left: 80px;
   top: -30px;
   width: 40px;
@@ -303,7 +326,7 @@ nav ul li a:hover {
 }
 
 .polaroid.red2:before {
-  background: url(../images/pins/red2.png) no-repeat;
+  background: url(/images/pins/red2.png) no-repeat;
   left: 80px;
   top: -15px;
   width: 40px;
@@ -311,7 +334,7 @@ nav ul li a:hover {
 }
 
 .polaroid.blue1:before {
-  background: url(../images/pins/blue1.png) no-repeat;
+  background: url(/images/pins/blue1.png) no-repeat;
   left: 80px;
   top: -15px;
   width: 40px;
@@ -319,7 +342,7 @@ nav ul li a:hover {
 }
 
 .polaroid.blue2:before {
-  background: url(../images/pins/blue2.png) no-repeat;
+  background: url(/images/pins/blue2.png) no-repeat;
   left: 80px;
   top: -25px;
   width: 40px;
@@ -327,7 +350,7 @@ nav ul li a:hover {
 }
 
 .polaroid.green1:before {
-  background: url(../images/pins/green1.png) no-repeat;
+  background: url(/images/pins/green1.png) no-repeat;
   left: 80px;
   top: -15px;
   width: 40px;
@@ -335,7 +358,7 @@ nav ul li a:hover {
 }
 
 .polaroid.yellow1:before {
-  background: url(../images/pins/yellow1.png) no-repeat;
+  background: url(/images/pins/yellow1.png) no-repeat;
   left: 80px;
   top: -15px;
   width: 40px;
@@ -354,16 +377,18 @@ nav ul li a:hover {
 }
 
 .postit.yellow1 {
-  background: url(../images/postits/postit-yellow-1.png) no-repeat;
+  background: url(/images/postits/postit-yellow-1.png) no-repeat;
 }
 
 .inset {
-  background-color: #502D16;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.3) 0px 3px 3px;
+  
+}
+
+.listenlive {
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+  left: -30px;
 }
 
 #twitter {
@@ -374,6 +399,8 @@ nav ul li a:hover {
 #twitter img {
   position: absolute;
   right: 0px;
+  top: -20px;
+  opacity: 0.4;
 }
 
 
@@ -410,4 +437,21 @@ footer {
   color: gray;
   font-family: sans-serif;
   padding: 10px 0px;
+}
+
+dl.schedule {
+	line-height: 1.4em;
+	padding-left: 5px;
+}
+
+
+dl.schedule dt {
+	float: left;
+	display: block;
+	width: 100px;
+}
+
+dl.schedule dd {
+	margin-left: 100px;
+	margin-bottom: 10px;
 }

@@ -6,6 +6,8 @@ home: true
 
 <div id='content'>
   <div class='right'>
+    <a href='http://wgsu-live.geneseo.edu:8000/icy_0.m3u' class='listenlive'><img alt='Listen Live' src='images/listen-horizontal.png'></a>
+
     <h1 class='inset' style='margin-bottom: 10px'>Facebook</h1>
     <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fwgsufm&amp;width=255&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;appId=133124820099547" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:255px; height:558px;" allowTransparency="true"></iframe>
 
@@ -19,19 +21,16 @@ home: true
   </div>
 
   <div class='left'>
-    <div class='post'>
-      
-      {% for post in site.posts %}
-        {% if post.layout == 'post' %}
-          <article>
-            <h1 class='inset'><a href='{{ post.url }}'>{{ post.title }}</a></h1>
+    {% for post in site.posts %}
+      {% if post.layout == 'post' %}
+        <article>
+          <h1 class='inset'><a href='{{ post.url }}'>{{ post.title }}</a></h1>
 
-            <span class='byline'>BY {{ post.author }}</span>
+          <span class='byline'>BY {{ post.author }} ON {{ post.date | date: "%d %B %Y"  }}</span>
 
-            {{ post.content | format_content }}
-          </article>
-        {% endif %}
-      {% endfor %}
-    </div>
+          {{ post.content | format_content }}
+        </article>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>

@@ -7,7 +7,7 @@ module Jekyll
 				output = input.split("<!-- excerpt end -->").at(0).split("<!-- excerpt start -->").at(1)
 				@context.registers[:site].posts.each do |post|
 					if(post.content == input)
-						output += "<p><a href='#{post.url}'>read more &raquo;</a></p>"
+						output += "<p><a href='#{post.url}' class='read-more'>read more &raquo;</a></p>"
 						break
 					end
 				end

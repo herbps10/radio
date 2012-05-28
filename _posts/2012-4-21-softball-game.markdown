@@ -14,5 +14,5 @@ More photos after the break.
 
 <!-- excerpt end -->
 
-<img src='/img/erik.jpg' class='post-image' />
-<img src='/img/group2.jpg' class='post-image' />
+<img src='/img/erik.jpg' class='post-image-centered' />
+<img src='/img/group2.jpg' class='post-image-centered' />
